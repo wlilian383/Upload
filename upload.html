@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Upload</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p,a, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+body{
+    width: 100vw;
+    height: 180vw;
+    min-width:200px;
+    min-height:360px;
+}
+a{
+  text-decoration:none;
+  background-color:#111111;
+  border-radius: 2vw;
+  
+  
+}
+.button{
+      width:5vw;
+      height:5vw;
+      display:inline;
+      overflow: auto;
+      white-space: nowrap;
+      margin:0px auto;
+      position: absolute;
+      left:3vw;
+      top:3vw;
+      cursor: pointer;
+      background-color:rgba(100%,100%,100%,0.8);
+      border-radius:3vw;
+      border:0px;
+      color:#efc265;
+	  font-size:2vw;
+	  padding-left:1.9vw;
+	  outline:none; 
+}
+#image{
+   width:100%;
+}
+
+#border_set{
+    position:relative;
+    border-width:3px;
+    border-style:dashed;
+    border-color:#efc265;
+    width:80%;
+    height:46.5%;
+    margin:10%;
+    margin-top:20%;
+    margin-bottom:20%;
+    background-image:url( 'upload_box.jpg ' );
+	background-repeat: no-repeat;
+	background-position: center 30%;
+	background-size:23%;
+}
+#upload_button {
+    position: absolute;
+    top:65%;
+    left:33%;
+    width: 34%;
+    height: 10%;
+    border: none;
+    border-radius: 3vw;
+    cursor: pointer;
+    background-color: #efc265;
+    color: #ffffff;
+    font-size: 5vw;
+    font-family: Microsoft JhengHei;
+    transition: all 0.2s;
+	box-shadow:0.4vw 0.4vw 0.8vw 0.2vw rgba(10%,10%,10%,0.3);
+    outline:0;
+    }
+#choose_file{
+	outline:0;
+	position:absolute;
+	top:20%;
+    left:33%;
+    width: 34%;
+    height: 60%;
+    border: none;
+	//opacity:0;
+}
+
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    padding: 1px 6px;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    //border-image: initial;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i] {
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}  
+    
+	</style>  
+	
+</head>
+  
+<body>
+  <div id="all" style="height: 100%; width: 100%;">
+    
+	<div id="top_region" style="height: 22.5%; width: 100%;">
+    <button class="button" onclick="">&#10094;</button>
+    <!--<a href="要連結的 URL 放這裡" target="連結目標" title="連結替代文字">13</a>-->
+    <img id="image"src="upload_up.jpg"></div>
+  
+    <div id="border_set">
+    <Form Action="mygetfilen.php" Method="POST" Enctype="multipart/form-data">
+	<Input Type="File" id="choose_file" Name="upfile">
+	<Input type="Submit" id="upload_button" value="上 傳">
+	</Form>
+	
+      </div>
+  </div>
+    
+  
+</body>
+
+</html>
